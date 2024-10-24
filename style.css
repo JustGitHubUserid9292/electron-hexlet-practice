@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #6495ED;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+
+.modal-content label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 12px;
+    margin-right: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.modal-content input:focus {
+    border-color: grey; 
+    outline: none;  
+}
+
+#saveUserBtn {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#saveUserBtn:hover {
+    background-color: #6495ED;
+}
+
+#closeModalBtn {
+    background: none;
+    border: none;
+    font-size: 20px; 
+    color: #aaa;     
+    cursor: pointer;  
+}
+
+#closeModalBtn:hover {
+    color: grey;     
+}
+
+#errorMessage {
+   font-size: 12px;
+   margin-right: 64%;
+   color: red;
+   display: none;
+}

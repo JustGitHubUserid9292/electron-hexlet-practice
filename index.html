@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Users Table</h1>
+    <table id="usersTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="usersBody">
+        </tbody>
+    </table>
+
+    <button id="addUserBtn">Add User</button>
+
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModalBtn" style="float: right; background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+            <h2>Add User</h2>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" placeholder="Enter name">
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" placeholder="Enter email">
+            <div id="errorMessage">Please fill in both fields</div>
+            <button id="saveUserBtn">Save</button>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

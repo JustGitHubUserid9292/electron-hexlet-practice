@@ -1,0 +1,16 @@
+{
+  "name": "electron-hexlet-practice",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^33.0.2",
+    "path": "^0.12.7"
+  }
+}
